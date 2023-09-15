@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/reeact-food/static/css/main.9d6cbdb9.css",
-    "main.js": "/github.io/reeact-food/static/js/main.94bf7539.js",
-    "index.html": "/github.io/reeact-food/index.html",
-    "main.9d6cbdb9.css.map": "/github.io/reeact-food/static/css/main.9d6cbdb9.css.map",
-    "main.94bf7539.js.map": "/github.io/reeact-food/static/js/main.94bf7539.js.map"
+    "main.css": "/reeact-food/static/css/main.9d6cbdb9.css",
+    "main.js": "/reeact-food/static/js/main.94bf7539.js",
+    "index.html": "/reeact-food/index.html",
+    "main.9d6cbdb9.css.map": "/reeact-food/static/css/main.9d6cbdb9.css.map",
+    "main.94bf7539.js.map": "/reeact-food/static/js/main.94bf7539.js.map"
   },
   "entrypoints": [
     "static/css/main.9d6cbdb9.css",
