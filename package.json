@@ -1,7 +1,7 @@
 {
   "name": "react-food",
-  "homepage": "https://Ivan19979/github.io/reeact-food/",
-  "version": "0.1.0",
+  "homepage": "https://Ivan19979.github.io/react-food/",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
