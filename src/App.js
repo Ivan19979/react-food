@@ -17,7 +17,7 @@ import { NotFound } from "./pages/NotFound";
 function App() {
   return (
     <>
-      <HashRouter basename="/react-food">
+      <HashRouter>
         <Header />
         <main className="container content">
           <Switch>
