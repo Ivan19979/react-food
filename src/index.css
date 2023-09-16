@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eeeeee;
+  background-color: #eee;
   color: #5d4037;
 }
 
@@ -118,6 +118,9 @@ iframe {
 table {
   width: 500px;
   max-width: 100%;
+  background-color: rgb(224, 224, 224, 0.6);
+  color: #000;
+  border: 1px solid #757575;
 }
 
 .recipe-title {
@@ -135,11 +138,6 @@ input[type="search"]:not(.browser-default) {
   border-radius: 0px;
   padding-left: 10px;
   margin-bottom: 0;
-}
-
-.striped {
-  background-color: #e0e0e0;
-  color: #000;
 }
 
 input[type="search"]:focus {
