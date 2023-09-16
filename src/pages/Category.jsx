@@ -7,7 +7,7 @@ import { MealList } from "../components/MealList";
 function Category() {
   const [meals, setMeals] = useState([]);
   const { name } = useParams();
-  const { goBack } = useHistory();
+  const { push } = useHistory();
 
   useEffect(() => {
     getFilteredCategory(name).then((data) => setMeals(data.meals));
@@ -15,10 +15,29 @@ function Category() {
 
   return (
     <>
-      <button className="btn  grey darken-2" onClick={goBack}>
+      <button
+        className="btn  grey darken-2"
+        onClick={() => {
+          push({
+            pathname: "/",
+          });
+        }}
+      >
         Go back
       </button>
       {!meals.length ? <Preloader /> : <MealList meals={meals} />}
+      {!meals.length ? null : (
+        <button
+          className="btn  grey darken-2"
+          onClick={() => {
+            push({
+              pathname: "/",
+            });
+          }}
+        >
+          Go back
+        </button>
+      )}
     </>
   );
 }

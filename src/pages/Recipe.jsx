@@ -6,7 +6,7 @@ import { Preloader } from "../components/Preloader";
 function Recipe() {
   const [recipe, setRecipe] = useState({});
   const { id } = useParams();
-  const { goBack } = useHistory();
+  const { push } = useHistory();
 
   useEffect(() => {
     getMealById(id).then((data) => setRecipe(data.meals[0]));
@@ -64,7 +64,14 @@ function Recipe() {
           ) : null}
         </div>
       )}
-      <button className="btn  grey darken-2" onClick={goBack}>
+      <button
+        className="btn  grey darken-2"
+        onClick={() => {
+          push({
+            pathname: `/category/${recipe.strCategory}`,
+          });
+        }}
+      >
         Go back
       </button>
     </>

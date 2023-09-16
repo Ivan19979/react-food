@@ -135,4 +135,43 @@ input[type="search"]:focus {
     width: 100%;
     padding-right: 0;
   }
+  .recipe-title {
+    font-size: 36px;
+  }
+  .content {
+    padding-top: 0.8rem;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  .input-field {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .list {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    height: 100px !important;
+  }
+
+  .brand-logo {
+    font-size: 32px !important;
+    position: static !important;
+  }
+  .nav-list {
+    display: flex !important;
+    line-height: 30px;
+  }
 }
