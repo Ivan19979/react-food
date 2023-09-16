@@ -11,7 +11,7 @@ function Meal(props) {
         <span className="card-title">{strMeal}</span>
       </div>
       <div className="card-action">
-        <Link to={`/meal/${idMeal}`} className="btn  red lighten-1">
+        <Link to={`/meal/${idMeal}`} className="btn red accent-4">
           Watch reciepe
         </Link>
       </div>

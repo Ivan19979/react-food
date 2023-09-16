@@ -14,7 +14,7 @@ function CategoryItem(props) {
       <div className="card-action">
         <Link
           to={`/category/${strCategory}`}
-          className="btn btn-category  red lighten-1"
+          className="btn btn-category red accent-4"
         >
           {strCategory}
         </Link>

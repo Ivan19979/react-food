@@ -13,7 +13,7 @@ function Recipe() {
   }, [id]);
 
   return (
-    <>
+    <div className="recipe-container">
       {!recipe.idMeal ? (
         <Preloader />
       ) : (
@@ -28,7 +28,7 @@ function Recipe() {
           {recipe.strArea ? <h5>Area: {recipe.strArea}</h5> : null}
           <p className="pecipe-description">{recipe.strInstructions}</p>
 
-          <table className="striped">
+          <table className="striped centered">
             <thead>
               <tr>
                 <th>Ingridient</th>
@@ -74,7 +74,7 @@ function Recipe() {
       >
         Go back
       </button>
-    </>
+    </div>
   );
 }
 

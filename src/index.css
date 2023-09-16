@@ -6,7 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #eee;
-  color: #5d4037;
+  background-image: url("../public/img/1647082484_73-kartinkin-net-p-kulinarnie-kartinki-80.jpg");
+  background-attachment: fixed;
+  color: #000;
 }
 
 code {
@@ -55,7 +57,7 @@ nav {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #eceff1;
+  background-color: rgba(236, 239, 241, 0.7);
   border-radius: 8px;
   box-shadow: 3px 3px 12px 0 #757575;
   border: 1px solid #470202;
@@ -137,11 +139,13 @@ input[type="search"]:not(.browser-default) {
   border-radius: 0px;
   padding-left: 10px;
   margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 input[type="search"]:focus {
-  border: 1px solid #757575 !important;
-  border-radius: 10px;
+  border: 1px solid rgb(117, 117, 117) !important;
+  background-color: #fff !important;
 }
 
 .btn-search {
@@ -151,16 +155,17 @@ input[type="search"]:focus {
   right: 0px;
 }
 
-input[type="search"]:focus {
-  background-color: transparent !important;
-}
-
 .contacts-list {
   font-size: 20px;
 }
 
 .contacts-list:hover {
   text-decoration: underline;
+}
+
+.recipe-container {
+  background-color: rgba(208, 202, 202, 0.8) !important;
+  border-radius: 10px;
 }
 
 @media (max-width: 767px) {
