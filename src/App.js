@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Switch,
+} from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
@@ -12,7 +17,7 @@ import { NotFound } from "./pages/NotFound";
 function App() {
   return (
     <>
-      <Router basename="/react-food">
+      <HashRouter basename="/react-food">
         <Header />
         <main className="container content">
           <Switch>
@@ -26,7 +31,7 @@ function App() {
           </Switch>
         </main>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }

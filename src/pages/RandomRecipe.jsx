@@ -17,7 +17,6 @@ function RandomRecipe() {
           });
         })
       : getMealById(search.split("=")[1]).then((data) => {
-          console.log(search);
           setRecipe(data.meals[0]);
         });
   }, [search]);
