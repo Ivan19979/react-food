@@ -65,7 +65,7 @@ function Recipe() {
         </div>
       )}
       <button
-        className="btn  grey darken-2"
+        className="btn  red accent-4"
         onClick={() => {
           push({
             pathname: `/category/${recipe.strCategory}`,

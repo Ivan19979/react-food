@@ -9,7 +9,7 @@ function About() {
         On this resource you can find your favorite recipe or look for something
         new for yourself
       </h3>
-      <button className="btn grey darken-2" onClick={goBack}>
+      <button className="btn red accent-4" onClick={goBack}>
         Go back
       </button>
     </>

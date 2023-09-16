@@ -38,7 +38,7 @@ function Contact() {
           </a>
         </li>
       </ul>
-      <button className="btn  grey darken-2" onClick={goBack}>
+      <button className="btn  red accent-4" onClick={goBack}>
         Go back
       </button>
     </>
