@@ -22,12 +22,7 @@ code {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.btn {
-  /* border: 2px solid transparent !important; */
-}
-
 .btn:focus-visible {
-  /* border: 2 solid #000 !important; */
   box-shadow: 0 0 0px 3px rgb(0, 100, 0);
 }
 

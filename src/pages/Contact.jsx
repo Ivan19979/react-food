@@ -5,42 +5,44 @@ function Contact() {
 
   return (
     <>
-      <h3>This Page leads to other services</h3>
-      <ul className="contacts-links">
-        <li>
-          <a
-            className="contacts-list"
-            href="https://github.com/Ivan19979"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a
-            className="contacts-list"
-            href="https://github.com/Ivan19979"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Telegram
-          </a>
-        </li>
-        <li>
-          <a
-            className="contacts-list"
-            href="https://github.com/Ivan19979"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkendIn
-          </a>
-        </li>
-      </ul>
-      <button className="btn  red accent-4" onClick={goBack}>
-        Go back
-      </button>
+      <div className="recipe-container">
+        <h3>This Page leads to other services</h3>
+        <ul className="contacts-links">
+          <li>
+            <a
+              className="contacts-list"
+              href="https://github.com/Ivan19979"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              className="contacts-list"
+              href="https://github.com/Ivan19979"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a
+              className="contacts-list"
+              href="https://github.com/Ivan19979"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkendIn
+            </a>
+          </li>
+        </ul>
+        <button className="btn  red accent-4" onClick={goBack}>
+          Go back
+        </button>
+      </div>
     </>
   );
 }

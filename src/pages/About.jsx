@@ -5,13 +5,15 @@ function About() {
 
   return (
     <>
-      <h3 className="about-title">
-        On this resource you can find your favorite recipe or look for something
-        new for yourself
-      </h3>
-      <button className="btn red accent-4" onClick={goBack}>
-        Go back
-      </button>
+      <div className="recipe-container">
+        <h3 className="about-title">
+          On this resource you can find your favorite recipe or look for
+          something new for yourself
+        </h3>
+        <button className="btn red accent-4" onClick={goBack}>
+          Go back
+        </button>
+      </div>
     </>
   );
 }
