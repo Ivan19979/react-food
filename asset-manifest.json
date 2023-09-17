@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-food/static/css/main.be797fce.css",
+    "main.css": "/react-food/static/css/main.6c92240b.css",
     "main.js": "/react-food/static/js/main.d92d01eb.js",
     "static/media/1647082484_73-kartinkin-net-p-kulinarnie-kartinki-80.jpg": "/react-food/static/media/1647082484_73-kartinkin-net-p-kulinarnie-kartinki-80.6bed7b2b6773079b7fc5.jpg",
     "index.html": "/react-food/index.html",
-    "main.be797fce.css.map": "/react-food/static/css/main.be797fce.css.map",
+    "main.6c92240b.css.map": "/react-food/static/css/main.6c92240b.css.map",
     "main.d92d01eb.js.map": "/react-food/static/js/main.d92d01eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.be797fce.css",
+    "static/css/main.6c92240b.css",
     "static/js/main.d92d01eb.js"
   ]
 }
