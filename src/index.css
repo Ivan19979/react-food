@@ -22,6 +22,15 @@ code {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.btn {
+  /* border: 2px solid transparent !important; */
+}
+
+.btn:focus-visible {
+  /* border: 2 solid #000 !important; */
+  box-shadow: 0 0 0px 3px rgb(0, 100, 0);
+}
+
 .about-title {
   margin-bottom: 50px;
   font-size: 30px;
@@ -34,6 +43,13 @@ code {
 
 nav {
   padding: 0 1rem;
+  border-end-end-radius: 16px;
+  border-end-start-radius: 16px;
+}
+
+footer {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
 }
 
 .content {
@@ -53,7 +69,6 @@ nav {
   background-color: rgba(236, 239, 241, 0.5);
   border-radius: 8px;
   box-shadow: 3px 3px 12px 0 #757575;
-  border: 1px solid #470202;
 }
 
 .btn {
@@ -61,27 +76,33 @@ nav {
 }
 
 .card-image {
-  border-start-end-radius: 9px;
-  border-start-start-radius: 9px;
+  border-radius: 8px;
   background-color: rgba(238, 238, 238, 0.5);
-  border-bottom: 1px solid #320202 !important;
-  margin-bottom: 10px;
+  border: 1px solid #000;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.card-content-title {
+  padding: 10px 15px !important;
+  border-radius: 8px !important;
+  border: 1px solid #000 !important;
+  border-top: 1px solid #000 !important;
 }
 
 .card-content {
   flex-grow: 1;
   background-color: rgba(238, 238, 238, 0.6) !important;
-  border-bottom: 1px solid #320202 !important;
-  border-top: 1px solid #320202 !important;
+  border: 1px solid #000 !important;
   font-style: italic;
+  border-radius: 8px !important;
 }
 
 .card-action {
   background-color: rgb(224, 224, 224, 0.5) !important;
-  border-top: 1px solid #320202 !important;
-  margin-top: 10px;
-  border-end-start-radius: 8px !important;
-  border-end-end-radius: 8px !important;
+  border: 1px solid #000 !important;
+  margin-top: 4px;
+  border-radius: 8px !important;
 }
 
 .card-title {
@@ -100,6 +121,7 @@ nav {
 img {
   max-width: 100%;
   max-height: 80vh;
+  border-radius: 8px !important;
 }
 
 iframe {
@@ -156,6 +178,7 @@ input[type="search"]:focus {
   background-color: rgba(208, 202, 202, 0.7) !important;
   border-radius: 10px;
   padding: 10px 15px;
+  border: 1px solid #000;
 }
 
 .recipe-title {
@@ -164,9 +187,10 @@ input[type="search"]:focus {
 }
 
 .recipe-img {
-  border-radius: 5px;
+  border-radius: 8px;
   display: block;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 
 .recipe-youtube-and-table {
@@ -211,13 +235,6 @@ input[type="search"]:focus {
     gap: 0rem;
   }
 }
-
-/* @media (max-width: 480px) {
-  .brand-logo {
-    font-size: 32px !important;
-    position: static !important;
-  }
-} */
 
 @media (max-width: 467px) {
   nav {
