@@ -195,6 +195,14 @@ input[type="search"]:focus {
   margin-bottom: 5px;
 }
 
+@media (max-width: 1023px) {
+  body {
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}
+
 @media (max-width: 767px) {
   .btn-search {
     display: none;
