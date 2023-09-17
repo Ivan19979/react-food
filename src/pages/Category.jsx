@@ -28,7 +28,7 @@ function Category() {
       {!meals.length ? <Preloader /> : <MealList meals={meals} />}
       {!meals.length ? null : (
         <button
-          className="btn  grey darken-2"
+          className="btn red accent-4"
           onClick={() => {
             push({
               pathname: "/",

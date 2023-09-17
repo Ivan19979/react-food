@@ -10,7 +10,7 @@ function Header() {
     getRandomRecipe().then((data) => setRecipe(data.meals[0]));
   }, [newRandom]);
   return (
-    <nav className="red darken-4">
+    <nav className="green darken-4">
       <div className="nav-wrapper">
         <Link
           to={`/meal/${recipe.idMeal}`}

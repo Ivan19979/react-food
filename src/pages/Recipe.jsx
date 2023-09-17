@@ -27,45 +27,46 @@ function Recipe() {
           <h4>Category: {recipe.strCategory}</h4>
           {recipe.strArea ? <h5>Area: {recipe.strArea}</h5> : null}
           <p className="pecipe-description">{recipe.strInstructions}</p>
+          <div className="recipe-youtube-and-table">
+            <table className="striped centered recipe-table">
+              <thead>
+                <tr>
+                  <th>Ingridient</th>
+                  <th>Measure</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.keys(recipe).map((key) => {
+                  if (key.includes("Ingredient") && recipe[key]) {
+                    return (
+                      <tr key={key}>
+                        <td>{recipe[key]}</td>
+                        <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
+                      </tr>
+                    );
+                  }
+                  return null;
+                })}
+              </tbody>
+            </table>
 
-          <table className="striped centered">
-            <thead>
-              <tr>
-                <th>Ingridient</th>
-                <th>Measure</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(recipe).map((key) => {
-                if (key.includes("Ingredient") && recipe[key]) {
-                  return (
-                    <tr key={key}>
-                      <td>{recipe[key]}</td>
-                      <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
-                    </tr>
-                  );
-                }
-                return null;
-              })}
-            </tbody>
-          </table>
-
-          {recipe.strYoutube ? (
-            <div className="row">
-              <h5>Video Recipe</h5>
-              <iframe
-                title={id}
-                src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
-                  -11
-                )}`}
-                allowFullScreen
-              />
-            </div>
-          ) : null}
+            {recipe.strYoutube ? (
+              <div className="row recipe-video">
+                <h5>Video Recipe</h5>
+                <iframe
+                  title={id}
+                  src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(
+                    -11
+                  )}`}
+                  allowFullScreen
+                />
+              </div>
+            ) : null}
+          </div>
         </div>
       )}
       <button
-        className="btn  red accent-4"
+        className="btn recipe-btn red accent-4"
         onClick={() => {
           push({
             pathname: `/category/${recipe.strCategory}`,
